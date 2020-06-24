@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dag van de week</title>
+    <script type="text/javascript">
+      "use strict";
+
+      let v = new Date();
+      let d = v.getDay();
+
+      let dagBenamingen = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"];
+
+      if (d < 6){
+        document.write(`<p>Vandaag is ${dagBenamingen[d-1]}. <br> Het is een werkdag, aan de slag dus.</p>`);
+      } else {
+        document.write(`<p>Vandaag is ${dagBenamingen[d-1]}. <br> Het is weekend, even bekomen.</p>`);
+      }
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
